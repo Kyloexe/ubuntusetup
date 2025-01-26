@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# This script is used to download all of my Flatpak packages. This script is isolated to avoid situations where Flatpak borks my machine
+
+# Making sure Flatpak is working
+
+sudo flatpak
+
+# Installs graphical design software (Inkscape, Krita)
+
+flatpak install org.kde.krita org.inkscape.Inkscape -y
+
+# Installs my gaming suite (Prism Launcher, Lutris, steam is installed in the main script)
+
+flatpak install org.prismlauncher.PrismLauncher net.lutris.Lutris org.libretro.RetroArch net.davidotek.pupgui2 -y
+
+
+
+
+echo "All programs installed, thank you and goodbye"
+
+sleep 5
+
+
